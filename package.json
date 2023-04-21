@@ -1,0 +1,34 @@
+{
+  "name": "performance-matters-optimizid-website-s-a",
+  "version": "1.0.0",
+  "description": "Optimized website voor Buurtcampus oost door Suus en Anouk",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anoukbruinn/performance-matters-optimizid-Website-S-A.git"
+  },
+  "keywords": [
+    "Buurtcampus",
+    "oost",
+    "stekjesbieb"
+  ],
+  "author": "Suus Harsveld, Anouk Bruin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anoukbruinn/performance-matters-optimizid-Website-S-A/issues"
+  },
+  "homepage": "https://github.com/anoukbruinn/performance-matters-optimizid-Website-S-A#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

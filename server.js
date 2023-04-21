@@ -25,6 +25,7 @@ app.set('port', 9800)
 
 // Start express op, haal het ingestelde poortnummer op
 app.listen(app.get('port'), function () {
+  console.log(`Application started on http://localhost:${app.get('port')}`)
 })
 
 

@@ -20,6 +20,11 @@ app.get('/', function (req, res) {
       res.render('index')
     })
 
+// Maak een route voor het index
+app.get('/what-the-plant', function (req, res) {
+  res.render('what-the-plant')
+})
+
 // Stel het poortnummer in waar express op gaat luisteren
 app.set('port', 9800)
 

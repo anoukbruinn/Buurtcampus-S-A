@@ -196,16 +196,12 @@ a {
     }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 284fbe4ce8a48834199546fdee3d424cbaee1c55
 /*footer*/
 
 
 
 footer{
-<<<<<<< HEAD
+
     /* display: flex; */
      border: #000000;
      justify-content: center;
@@ -254,57 +250,9 @@ footer{
  
  }
  
-=======
-   /* display: flex; */
-    border: #000000;
-    justify-content: center;
-    
+/*toevoegen*/
+
+div.intro{
+background-color: #B8C7B4;
+border-radius: 5px ;
 }
-
-button{
-    background-color: #214D12;
-    height: 40px ;
-    width: 170px ;
-    border-radius: 5px;
-    color: white;
-    font-size: 17px;    
-}
-
-div.button-footer{
-display: flex;
-justify-content: space-around;
-}
-
-p.footer {
-    text-align: center;
-}
-
-img.logo-footer{
-    align-items: center;
-    width: 120px;
-    height: 55,59px;
-}
-
-div.footer-3 {
-    display: flex;
-    justify-content: space-around;
-} 
-
-div.footer-1{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-img.instagram{
-    margin-left: 10px;
-    margin-right: 10px;
-
-}
-
-
-
-
-
->>>>>>> 284fbe4ce8a48834199546fdee3d424cbaee1c55

@@ -1,6 +1,6 @@
 // Importeer express uit de node_modules map
 import * as dotenv from "dotenv";
-import express from 'express';
+import express, { request, response } from 'express';
 
 dotenv.config();
 
@@ -19,6 +19,12 @@ app.use(express.static('public'))
 app.get('/', function (req, res) {
       res.render('index')
     })
+
+app.get('/toevoegen',(request, response)=> {
+  response.render('toevoegen')
+}
+)
+
 
 // Stel het poortnummer in waar express op gaat luisteren
 app.set('port', 9800)

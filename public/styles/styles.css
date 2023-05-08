@@ -1,3 +1,30 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -131,16 +158,20 @@ input[type="checkbox"]:checked {
 }
 
 .nav-menu {
-    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    display: none;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin: 1rem;
+    padding: 1rem;
+    left: 0;
 }
+
 
 li {
     list-style: none;
-    display: none;
 }
 
 a {
@@ -153,8 +184,8 @@ a {
     font-size: var(--h4);
 }
 
-#nav-checkbox:checked ~ ul.nav-menu li {
-    display: block;
+#nav-checkbox:checked ~ ul.nav-menu {
+    display: flex;
 }
 
 #nav-checkbox:checked ~ label.nav-toggle .close {
@@ -168,17 +199,18 @@ a {
 /* Hero */
 
 .hero {
-    background-image: url(/public/assets/Hero-afbeelding.jpg);
+    position: absolute;
+    background-image: url(../assets/Hero-afbeelding.jpg);
     width: 100%;
-    height: auto;
+    height: 35%;
 }
 
 .hero-card {
     padding: 30px;
     background-color: var(--light-green);
-    margin: 10px;
     border-radius: 10px;
     width: 70%;
+    margin: 10% 0 0 5%;
 }
 
 .hero-card h1 {

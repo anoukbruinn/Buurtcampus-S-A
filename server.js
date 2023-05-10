@@ -33,11 +33,8 @@ app.get("/what-the-plant", function (req, res) {
 
 // Maak een route voor de stekjesbieb
 
-app.get("/stekjesbieb", function (req, res) {
-  const url = `${process.env.API_URL}/stekjes`;
-  fetchJson(url).then((data) => {
-    res.render("stekjesbieb", data);
-  });
+app.get("/stekjesbieb", (request, response) => {
+  response.render("stekjesbieb");
 });
 
 // Stel het poortnummer in waar express op gaat luisteren

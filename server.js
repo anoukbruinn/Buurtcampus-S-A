@@ -4,6 +4,9 @@ import express, { request, response } from "express";
 
 dotenv.config();
 
+const url = "https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes";
+const data = await fetch(url).then((response) => response.json());
+
 // Maak een nieuwe express app aan
 const app = express();
 

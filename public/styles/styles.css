@@ -254,7 +254,7 @@ div.intro p {
   margin-left: 1em;
 }
 
-div.button-footer button {
+.footer-button {
   background-color: #214d12;
   height: 40px;
   width: 170px;

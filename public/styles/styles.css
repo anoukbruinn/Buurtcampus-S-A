@@ -184,16 +184,11 @@ footer{
      font-size: 17px;    
  }
  
- div.button-footer button{
+ div.button-footer {
  display: flex;
  justify-content: space-around;
 
-    background-color: #214D12;
-     height: 40px ;
-     width: 170px ;
-     border-radius: 5px;
-     color: white;
-     font-size: 17px; 
+    
  }
  
  p.footer {

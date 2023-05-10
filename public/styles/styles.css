@@ -303,6 +303,41 @@ img.instagram {
   margin-right: 10px;
 }
 
+/* Informatie pagina */
+
+.information {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.information h2 {
+    font-family: var(--header);
+    font-size: var(--h2);
+    font-weight: var(--bold);  
+    margin-left: 10px;
+}
+
+.information p {
+    font-family: var(--bodytext);
+    font-size: var(--p);
+    font-weight: var(--regular);
+}
+
+.kop {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.fa-solid .fa-seedling {
+ font-size: 10px;
+}
+
+.fa-solid .fa-bugs {
+    font-size: 10px;
+}
+   
+
 /*Form*/
 
 form {
@@ -357,17 +392,32 @@ button.toevoegen-button {
     display: block;
   }
 
-  /*Toevoegen*/
-
   /* Hero */
 
   .hero {
     background-size: cover;
-    height: 35%;
+    height: 45vh;
   }
 
   .hero-card {
     width: 30%;
-    margin: 5% 0 0 5%;
+    margin: 2% 0 0 5%;
   }
+
+  .hero-card h1 {
+    font-size: var(--h1);
+  }
+
+  /* Informatie */
+
+  .information {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+
+  .info-card {
+    width: 40%;
+  }
+
 }

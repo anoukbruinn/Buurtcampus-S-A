@@ -244,6 +244,10 @@ a {
 
 /*Footer*/
 
+footer {
+    margin-top: 70px;
+}
+
 div.intro {
   background-color: #b8c7b4;
   border-radius: 5px;

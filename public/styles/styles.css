@@ -165,46 +165,13 @@ a {
     display: none;
 }
 
-/* Desktop */
-@media only screen and (min-width:560px) {
-
-    /* Header */
-    header {
-        padding: 20px 10px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav .nav-toggle {
-        display: none;
-    }
-
-    .nav-checkbox {
-        display: none;
-    }
-    
-    .nav-menu {
-        position: relative;
-        flex-direction: row;
-    }
-
-    li {
-        display: block;
-    }
-}
-
 /*footer*/
 
 
 
 footer{
-
-    /* display: flex; */
-     border: #000000;
-     justify-content: center;
+    border: #000000;
+    justify-content: center;
      
  }
  
@@ -249,10 +216,83 @@ footer{
      margin-right: 10px;
  
  }
- 
+
+
+
+/*form*/
+
+form {
+
+justify-content: center;
+}
+
+input {
+
+    border-color: #75916E;
+    border-radius: 5px;
+    width: 320px;
+    height: 52px;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+    button.toevoegen-button {
+        margin-left:35px;
+    }
+
+
+/* Desktop */
+@media only screen and (min-width:560px) {
+
+    /* Header */
+    header {
+        padding: 20px 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .nav-toggle {
+        display: none;
+    }
+
+    .nav-checkbox {
+        display: none;
+    }
+    
+    .nav-menu {
+        position: relative;
+        flex-direction: row;
+    }
+
+    li {
+        display: block;
+    }
+
 /*toevoegen*/
 
 div.intro{
-background-color: #B8C7B4;
-border-radius: 5px ;
+    background-color: #B8C7B4;
+    border-radius: 5px ;
+    width: 50%;
+    margin-top: -14em;
+    margin-bottom: 7em;
+    margin-left: 10em;
+    position: relative;
+    }
+    
+    div.intro h1{
+        margin-left: 1em;
+    }
+    
+    div.intro p{
+        margin-left: 1em;
+    }
 }
+

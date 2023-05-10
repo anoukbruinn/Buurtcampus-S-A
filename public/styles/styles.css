@@ -234,7 +234,7 @@ a {
   font-weight: var(--regular);
 }
 
-/*footer*/
+/*Footer*/
 
 div.intro {
   background-color: #b8c7b4;
@@ -295,7 +295,7 @@ img.instagram {
   margin-right: 10px;
 }
 
-/*form*/
+/*Form*/
 
 form {
   justify-content: center;
@@ -349,7 +349,7 @@ button.toevoegen-button {
     display: block;
   }
 
-  /*toevoegen*/
+  /*Toevoegen*/
 
   /* Hero */
 

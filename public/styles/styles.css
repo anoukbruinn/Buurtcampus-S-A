@@ -184,9 +184,16 @@ footer{
      font-size: 17px;    
  }
  
- div.button-footer{
+ div.button-footer button{
  display: flex;
  justify-content: space-around;
+
+    background-color: #214D12;
+     height: 40px ;
+     width: 170px ;
+     border-radius: 5px;
+     color: white;
+     font-size: 17px; 
  }
  
  p.footer {
@@ -245,7 +252,8 @@ input {
     }
 
 
-/* Desktop */
+
+    /* Desktop */
 @media only screen and (min-width:560px) {
 
     /* Header */

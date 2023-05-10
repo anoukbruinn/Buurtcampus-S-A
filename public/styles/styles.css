@@ -1,293 +1,298 @@
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
 
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0;
-    line-height: 1.4;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  line-height: 1.4;
 }
 
 :root {
-    /* Color */
-    --dark-green: #214D12;
-    --medium-green: #75916E;
-    --light-green: #B8C7B4;
-    --dark-blue: #333568;
-    --medium-blue: #7D81A4;
-    --light-blue: #BCBED1;
-    --black: #000000;
-    --white: #ffffff;
+  /* Color */
+  --dark-green: #214d12;
+  --medium-green: #75916e;
+  --light-green: #b8c7b4;
+  --dark-blue: #333568;
+  --medium-blue: #7d81a4;
+  --light-blue: #bcbed1;
+  --black: #000000;
+  --white: #ffffff;
 
-    /* Font */
-    --header: 'Noto Sans', sans-serif;;
-    --bodytext: 'Schibsted Grotesk', sans-serif;
+  /* Font */
+  --header: "Noto Sans", sans-serif;
+  --bodytext: "Schibsted Grotesk", sans-serif;
 
-    /* Font weight */
-    --regular: 400;
-    --bold: 600;
+  /* Font weight */
+  --regular: 400;
+  --bold: 600;
 
-    /* Fontsize */
-    --h1: 32px;
-    --h2: 26px;
-    --h3: 22px;
-    --h4: 20px;
-    --h5: 18px;
-    --h6: 16px;
-    --p: 16px;
+  /* Fontsize */
+  --h1: 32px;
+  --h2: 26px;
+  --h3: 22px;
+  --h4: 20px;
+  --h5: 18px;
+  --h6: 16px;
+  --p: 16px;
 
-    /* Border */
-    --radius: 10px;
+  /* Border */
+  --radius: 10px;
 
-    /* Margins stekjes */
-    --top-bottom: 20px;
-    --left-right: 10px
+  /* Margins stekjes */
+  --top-bottom: 20px;
+  --left-right: 10px;
 }
 
 /* Header */
 
 header {
-    box-shadow:0 0 12px 1px rgb(0 0 0 / 10%);
-    width: 100%;
-    padding: 20px 10px 0px 10px;
-    position: sticky;
+  box-shadow: 0 0 12px 1px rgb(0 0 0 / 10%);
+  width: 100%;
+  padding: 20px 10px 0px 10px;
+  position: sticky;
 }
 
 nav > a > img {
-    width: 130px;
-    height: auto;
+  width: 130px;
+  height: auto;
 }
 
 label {
-    user-select: none;
+  user-select: none;
 }
 
 .nav-toggle {
-    position: absolute;
-    cursor: pointer;
-    margin: 0 16px;
-    right: 0;  
-    font-size: 25px;
+  position: absolute;
+  cursor: pointer;
+  margin: 0 16px;
+  right: 0;
+  font-size: 25px;
 }
 
 nav svg {
-    width: 1.5rem;
-    fill: black;
+  width: 1.5rem;
+  fill: black;
 }
 
 .close {
-    display: none;
+  display: none;
 }
 
 .menu {
-    margin-top: 0.2rem;
+  margin-top: 0.2rem;
 }
 
 input[type="checkbox"] {
-    position: absolute;
-    cursor: pointer;
-    margin: 15px 32px;
-    width: 22px;
-    height: auto;
-    right: 0;
-    background-color: white;
+  position: absolute;
+  cursor: pointer;
+  margin: 15px 32px;
+  width: 22px;
+  height: auto;
+  right: 0;
+  background-color: white;
 }
 
 input[type="checkbox"]:checked {
-    position: absolute;
-    cursor: pointer;
-    margin: 17px 32px;
-    background-color: white;
+  position: absolute;
+  cursor: pointer;
+  margin: 17px 32px;
+  background-color: white;
 }
 
 .nav-checkbox + label:before {
-    position: absolute;
-    cursor: pointer;
-    right: 0;
-    border: #ffffff;
-    z-index: 5;
-    font-family: fontawesome;
-    content: "\f0c9";
-    margin: 5px 16px;
-    width: 22px;
-    height: auto;
-    border: none;
-    background-color: white;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  border: #ffffff;
+  z-index: 5;
+  font-family: fontawesome;
+  content: "\f0c9";
+  margin: 5px 16px;
+  width: 22px;
+  height: auto;
+  border: none;
+  background-color: white;
 }
 
 .nav-checkbox:checked + label:before {
-    position: absolute;
-    z-index: 5;
-    font-family: fontawesome;
-    margin: 5px 16px;
-    width: 22px;
-    height: auto;
-    content: "\f00d";
-    border: none;
-    background-color: white;
+  position: absolute;
+  z-index: 5;
+  font-family: fontawesome;
+  margin: 5px 16px;
+  width: 22px;
+  height: auto;
+  content: "\f00d";
+  border: none;
+  background-color: white;
 }
 
 :focus {
-    outline-color: gray;
-    border-radius: 2px;
-    height:100%;
+  outline-color: gray;
+  border-radius: 2px;
+  height: 100%;
 }
 
 .nav-menu {
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    padding: 1rem;
-    left: 0;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  left: 0;
 }
 
-
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--black);
-    display: inline-block;
-    height: 100%;
-    font-family: var(--header);
-    font-weight: var(--bold);
-    font-size: var(--h4);
+  text-decoration: none;
+  color: var(--black);
+  display: inline-block;
+  height: 100%;
+  font-family: var(--header);
+  font-weight: var(--bold);
+  font-size: var(--h4);
 }
 
 #nav-checkbox:checked ~ ul.nav-menu {
-    display: flex;
+  display: flex;
 }
 
 #nav-checkbox:checked ~ label.nav-toggle .close {
-    display: block;
+  display: block;
 }
 
 #nav-checkbox:checked ~ label.nav-toggle .menu {
-    display: none;
+  display: none;
 }
 
 /* Hero */
 
 .hero {
-    position: absolute;
-    background-image: url(../assets/Hero-afbeelding.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 35%;
+  position: absolute;
+  background-image: url(../assets/Hero-afbeelding.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 35%;
 }
 
 .hero-card {
-    padding: 30px;
-    background-color: var(--light-green);
-    border-radius: 10px;
-    width: 70%;
-    margin: 10% 0 0 5%;
+  padding: 30px;
+  background-color: var(--light-green);
+  border-radius: 10px;
+  width: 70%;
+  margin: 10% 0 0 5%;
 }
 
 .hero-card h1 {
-    font-family: var(--header);
-    font-size: var(--h2);
-    font-weight: var(--bold);
+  font-family: var(--header);
+  font-size: var(--h2);
+  font-weight: var(--bold);
 }
 
 .hero-card p {
-    font-family: var(--bodytext);
-    font-size: var(--p);
-    font-weight: var(--regular);
+  font-family: var(--bodytext);
+  font-size: var(--p);
+  font-weight: var(--regular);
 }
 
 /*footer*/
 
-
-div.intro{
-    background-color: #B8C7B4;
-    border-radius: 5px ;
-    width: 50%;
-    margin-top: -14em;
-    margin-bottom: 7em;
-    margin-left: 10em;
-    position: relative;
-    }
-    
-    div.intro h1{
-        margin-left: 1em;
-    }
-    
-    div.intro p{
-        margin-left: 1em;
-    }
+div.intro {
+  background-color: #b8c7b4;
+  border-radius: 5px;
+  width: 50%;
+  margin-top: -14em;
+  margin-bottom: 7em;
+  margin-left: 10em;
+  position: relative;
 }
 
-button{
-    background-color: #214D12;
-    height: 40px ;
-    width: 170px ;
-    border-radius: 5px;
-    color: white;
-    font-size: 17px;    
+div.intro h1 {
+  margin-left: 1em;
 }
 
-div.button-footer{
+div.intro p {
+  margin-left: 1em;
+}
+
+.footer-button {
+  background-color: #214d12;
+  height: 40px;
+  width: 170px;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+}
+
+div.button-footer {
   display: flex;
   justify-content: space-around;
 }
 
 p.footer {
-    text-align: center;
+  text-align: center;
 }
 
-img.logo-footer{
-    align-items: center;
-    width: 120px;
-    height: 55,59px;
+img.logo-footer {
+  align-items: center;
+  width: 120px;
+  height: 55, 59px;
 }
 
 div.footer-3 {
-    display: flex;
-    justify-content: space-around;
-} 
-
-div.footer-1{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
 }
 
-img.instagram{
-    margin-left: 10px;
-    margin-right: 10px;
+div.footer-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 
+img.instagram {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*form*/
@@ -297,79 +302,65 @@ form {
 }
 
 input {
-
-    border-color: #75916E;
-    border-radius: 5px;
-    width: 320px;
-    height: 52px;
-    font-size: medium;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    margin-left: 35px;
-    margin-right: 35px;
+  border-color: #75916e;
+  border-radius: 5px;
+  width: 320px;
+  height: 52px;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
-    button.toevoegen-button {
-       margin-left:35px;
+button.toevoegen-button {
+  margin-left: 35px;
 }
 
 /* Desktop */
-@media only screen and (min-width:560px) {
+@media only screen and (min-width: 560px) {
+  /* Header */
+  header {
+    padding: 20px 10px;
+  }
 
-    /* Header */
-    header {
-        padding: 20px 10px;
-    }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
+  nav .nav-toggle {
+    display: none;
+  }
 
-    nav .nav-toggle {
-        display: none;
-    }
+  .nav-checkbox {
+    display: none;
+  }
 
-    .nav-checkbox {
-        display: none;
-    }
-    
-    .nav-menu {
-        position: relative;
-        flex-direction: row;
-        display: flex;
-        justify-content: flex-end;
-    }
+  .nav-menu {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    li {
-        display: block;
-    }
+  li {
+    display: block;
+  }
 
-/*toevoegen*/
+  /*toevoegen*/
 
+  /* Hero */
 
-    /* Hero */
+  .hero {
+    background-image: url(../assets/Hero-afbeelding-desktop.jpg);
+    background-size: cover;
+    height: 35%;
+  }
 
-    .hero {
-        background-image: url(../assets/Hero-afbeelding-desktop.jpg);
-        background-size: cover;
-        height: 35%;
-    }
-    
-    .hero-card {
-        width: 30%;
-        margin: 5% 0 0 5%;
-    }
+  .hero-card {
+    width: 30%;
+    margin: 5% 0 0 5%;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-

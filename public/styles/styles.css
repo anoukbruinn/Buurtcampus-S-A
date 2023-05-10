@@ -274,6 +274,7 @@ input {
     li {
         display: block;
     }
+<<<<<<< Updated upstream
 
 /*toevoegen*/
 
@@ -296,3 +297,59 @@ div.intro{
     }
 }
 
+=======
+}
+
+/*footer*/
+
+
+
+footer{
+    /* display: flex; */
+     border: #000000;
+     justify-content: center;
+     
+ }
+ 
+ button{
+     background-color: #214D12;
+     height: 40px ;
+     width: 170px ;
+     border-radius: 5px;
+     color: white;
+     font-size: 17px;    
+ }
+ 
+ div.button-footer{
+ display: flex;
+ justify-content: space-around;
+ }
+ 
+ p.footer {
+     text-align: center;
+ }
+ 
+ img.logo-footer{
+     align-items: center;
+     width: 120px;
+     height: 55,59px;
+ }
+ 
+ div.footer-3 {
+     display: flex;
+     justify-content: space-around;
+ } 
+ 
+ div.footer-1{
+     display: flex;
+     justify-content: center;
+     margin-top: 25px;
+     margin-bottom: 25px;
+ }
+ 
+ img.instagram{
+     margin-left: 10px;
+     margin-right: 10px;
+ 
+ }
+>>>>>>> Stashed changes

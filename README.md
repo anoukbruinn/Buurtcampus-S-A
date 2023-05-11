@@ -1,4 +1,46 @@
 # performance-matters-optimezed-Website-S-A
-Gezamelijke repo voor de deeltaak van Suus en Anouk 
+ 
+ 
+## Inhoudsopgave
 
-<img width="1156" alt="Schermafbeelding 2023-04-18 om 13 42 54" src="https://user-images.githubusercontent.com/112931845/232766663-8e1ea453-256f-41f6-8b94-b7439e353c72.png">
+  * [Beschrijving](#beschrijving)
+  * [Kenmerken](#kenmerken)
+  * [Installatie](#installatie)
+  * [Gebruik](#gebruik)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
+
+## Beschrijving
+Gezamelijke repo voor de deeltaak van Suus en Anouk
+
+## Kenmerken
+
+*Gebruikte tools*
+Figma
+VS Code
+
+*Gebruikte techniek*
+HTML
+CSS
+JavaScript
+Node.js
+Express
+
+## Installatie
+Installeer Node.js en express
+
+## Gebruik
+Stekjes ruilen
+
+## Bronnen
+MDN docs
+Youtube
+Google
+[Plantsome zieke plant] (https://www.plantsome.nl/blogs/verzorging-detail/is-mijn-plant-zie)
+[Plantsome verzorging aechmea] (https://www.plantsome.nl/blogs/plantengids/verzorging-aechmea)
+
+## Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).

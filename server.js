@@ -19,7 +19,7 @@ app.use(express.static("public"));
 
 // Maak een route voor het index
 app.get("/", function (req, res) {
-  res.render("index");
+  res.render("index", data);
 });
 
 app.get("/toevoegen", (request, response) => {
@@ -34,7 +34,7 @@ app.get("/what-the-plant", function (req, res) {
 // Maak een route voor de stekjesbieb
 
 app.get("/stekjesbieb", (request, response) => {
-  response.render("stekjesbieb");
+  response.render("stekjesbiebç", data);
 });
 
 // Stel het poortnummer in waar express op gaat luisteren

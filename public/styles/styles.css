@@ -87,7 +87,7 @@ header {
 }
 
 nav {
-    z-index: 1000000;
+  z-index: 1000000;
 }
 
 nav > a > img {
@@ -245,7 +245,7 @@ a {
 /*Footer*/
 
 footer {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 div.intro {
@@ -310,37 +310,36 @@ img.instagram {
 /* Informatie pagina */
 
 .information {
-    width: 90%;
-    margin-left: 5%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .information h2 {
-    font-family: var(--header);
-    font-size: var(--h2);
-    font-weight: var(--bold);  
-    margin-left: 10px;
+  font-family: var(--header);
+  font-size: var(--h2);
+  font-weight: var(--bold);
+  margin-left: 10px;
 }
 
 .information p {
-    font-family: var(--bodytext);
-    font-size: var(--p);
-    font-weight: var(--regular);
+  font-family: var(--bodytext);
+  font-size: var(--p);
+  font-weight: var(--regular);
 }
 
 .kop {
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .fa-solid .fa-seedling {
- font-size: 10px;
+  font-size: 10px;
 }
 
 .fa-solid .fa-bugs {
-    font-size: 10px;
+  font-size: 10px;
 }
-   
 
 /*Form*/
 
@@ -363,6 +362,25 @@ input {
 
 button.toevoegen-button {
   margin-left: 35px;
+}
+
+/*stekjesbieb*/
+
+h3.stekjesbieb-intro {
+  text-align: center;
+}
+
+img.stekjes {
+  width: 270px;
+  height: auto;
+  border-radius: 5px;
+  background-color: #b8c7b4;
+}
+
+article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* Desktop */
@@ -423,5 +441,4 @@ button.toevoegen-button {
   .info-card {
     width: 40%;
   }
-
 }

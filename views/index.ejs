@@ -2,4 +2,12 @@
 
 <h1> HOI </h1>
 
+<% stekjes.forEach(stekje => { %>
+    <article>
+        <img src="<%=stekje.fotos[0].original %>" width="<%=stekje.fotos[0].width%>" />
+        <h2><%= stekje.naam %></h2>
+    </article>
+<% }) %>
+
+
 <%- include('./partials/foot.ejs') %>

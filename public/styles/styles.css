@@ -314,6 +314,65 @@ a {
     margin-bottom: 40px;
 }
 
+.swap {
+    background-color: var(--medium-green);
+    color: white;
+    border-radius: 20px;
+    padding: 10%;
+}
+
+.swap > .kop {
+    margin: 20px 0 10px 0;
+}
+
+.swap h3 {
+    font-family: var(--header);
+    font-size: var(--h2);
+    font-weight: var(--bold);
+    text-align: center;
+}
+
+.swap h4 {
+    font-family: var(--header);
+    font-size: var(--h3);
+    font-weight: var(--regular);
+    margin-left: 10px;
+}
+
+.swap p {
+    font-family: var(--bodytext);
+    font-size: var(--p);
+    font-weight: var(--regular);
+}
+
+.donation {
+    position: relative;
+    background-color: var(--dark-green);
+    color: white;
+    border-radius: 20px;
+    padding: 10%;
+    margin-top: -10%;
+    z-index: -1;
+}
+
+.donation > .kop {
+    margin: 20px 0 10px 0;
+}
+
+.donation h4 {
+    font-family: var(--header);
+    font-size: var(--h3);
+    font-weight: var(--regular);
+    margin-left: 10px;
+}
+
+.donation p {
+    font-family: var(--bodytext);
+    font-size: var(--p);
+    font-weight: var(--regular);
+}
+
+
 
 /*Footer*/
 

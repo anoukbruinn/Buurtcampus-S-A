@@ -390,6 +390,32 @@ a {
     width: 90%;
 }
 
+.index-information {
+    background-color: var(--light-green);
+    color: black;
+    border-radius: 20px;
+    padding: 10%;
+}
+
+.index-information > .kop {
+    margin: 0 0 10px 0;
+}
+
+.index-information h4 {
+    font-family: var(--header);
+    font-size: var(--h4);
+    font-weight: var(--bold);
+    margin-left: 10px;
+}
+
+.index-information p {
+    font-family: var(--bodytext);
+    font-size: var(--p);
+    font-weight: var(--regular);
+    width: 90%;
+    margin-bottom: 20%;
+}
+
 
 /*Footer*/
 

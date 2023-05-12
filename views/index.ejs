@@ -1,13 +1,21 @@
 <%- include('./partials/head.ejs') %>
 
-<h1> HOI </h1>
+<section class="hero">
+    <section class="hero-card-index">
+        <h1>Stekjesbieb</h1>
+        <h2>Amsterdam</h2>
+    </section>
+</section>
 
-<% stekjes.forEach(stekje => { %>
-    <article>
-        <img src="<%=stekje.fotos[0].original %>" width="<%=stekje.fotos[0].width%>" />
-        <h2><%= stekje.naam %></h2>
-    </article>
-<% }) %>
+<section class="intro">
+    <p>Heb jij één of meerdere plantenstekjes over en zou je die graag willen ruilen voor een nieuw plantje?</p>
+    <p>Meld je stekje hier aan en ruil ‘m via de app. Schrijf de Latijnse naam van je plant en eventuele verzorgingstips op een labeltje en neem ‘m mee naar de OBA Linnaeusstraat in Amsterdam.</p>
+    <div class="btn-wrap">
+        <a class="btn-index-top" href="stekjesbieb" role="button" aria-label="Stekjesbieb">Stekjesbieb</a>
+        <a class="btn-index-bottom" href="what-the-plant" role="button" aria-label="What the plant">What the plant</a>
+    </div>
+</section>
+
 
 
 <%- include('./partials/foot.ejs') %>

@@ -1,3 +1,20 @@
 <%- include('./partials/head') %>
-hoi
+<section class="hero">
+    <section class="hero-card">
+        <h1>Stekjesbieb</h1>
+        <p>Alle stekjes die op dit moment aanwezig zijn.</p>
+    </section>
+</section>
+
+<h3 class="stekjesbieb-intro"> Alle stekjes die op dit moment aanwezig zijn die zijn hieronder te zien.</h3>
+
+
+<% stekjes.forEach(stekje => { %>
+    <article>
+        <img class="stekjes" src="<%=stekje.fotos[0].original %>"/>
+        <h2><%= stekje.naam %></h2>
+    </article>
+<% }) %>
+
+
 <%- include('./partials/foot') %>

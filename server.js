@@ -18,8 +18,8 @@ app.set("views", "./views");
 app.use(express.static("public"));
 
 // Maak een route voor het index
-app.get("/", function (req, res) {
-  res.render("index", data);
+app.get("/", function (request, response) {
+  response.render("index", data);
 });
 
 app.get("/toevoegen", (request, response) => {
@@ -27,8 +27,8 @@ app.get("/toevoegen", (request, response) => {
 });
 
 // Maak een route voor het what-the-plant
-app.get("/what-the-plant", function (req, res) {
-  res.render("what-the-plant");
+app.get("/what-the-plant", function (request, response) {
+  response.render("what-the-plant");
 });
 
 // Maak een route voor de stekjesbieb

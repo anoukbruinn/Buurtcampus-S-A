@@ -537,6 +537,12 @@ html {
   
   button.toevoegen-button {
     margin-left: 35px;
+    background-color: #214d12;
+    height: 40px;
+    width: 170px;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
   }
   
   /*stekjesbieb*/

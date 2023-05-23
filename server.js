@@ -34,7 +34,13 @@ app.get("/what-the-plant", function (req, res) {
 // Maak een route voor de stekjesbieb
 
 app.get("/stekjesbieb", (request, response) => {
-  response.render("stekjesbiebç", data);
+  response.render("stekjesbieb", data);
+});
+
+// Maak een route voor de new-plant
+
+app.get("/new-plant", (request, response) => {
+  response.render("new-plant", data);
 });
 
 // Stel het poortnummer in waar express op gaat luisteren

@@ -1,5 +1,48 @@
 <%- include('./partials/head') %>
 
+    <main>
+
+        <section class="detailpage">
+            <% if (stekje.fotos[0]) { %>
+            <img class="individual-stekje-img" src="<%=stekje.fotos[0].original %>" width="<%=stekje.fotos[0].width%>"
+                height="<%= stekje.fotos[0].heigth %>" alt="stekje <%= stekje.naam %>">
+            <% }else{ %>
+            <!-- anders een placeholder -->
+            <img class="individual-stekje-img" src="">
+            <% } %>
+
+            <section class="stekje-details">
+                <span>KAMERPLANT</span>
+                <h1><%= stekje.naam %></h1>
+            <div class="stekje-icons-detail">
+                    <div>
+                        
+                        <span class="name-stekje-icon">Land van herkomst</span>
+                        <p><%= stekje.landvanherkomst %></p>
+                    </div>
+
+                    <div>
+                        
+                        <span class="name-stekje-icon">Giftig</span>
+                        <p><%= stekje.giftig %></p>
+                    </div>
+
+                    <div>
+                    
+                        <span class="name-stekje-icon">Verpotten</span>
+                        <p><%= stekje.verpotten %></p>
+                    </div>
+
+                    <div>
+                        
+                        <span class="name-stekje-icon">Voeding</span>
+                        <p><%= stekje.voeding %></p>
+                    </div>
+                </div>
+                
+            </section>
+        </section>
+    </main>
 
 
 <%- include('./partials/foot') %>

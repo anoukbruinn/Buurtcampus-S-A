@@ -10,12 +10,17 @@
 
 
 <% stekjes.forEach(stekje => { %>
-    <article>
+ 
+          <article>
         <img class="stekjes" src="<%=stekje.fotos[0].original %>"/>
         <h2><%= stekje.naam %></h2>
-        <button class="informatie-button"> Meer informatie </button>
+        <a class="informatie-button" href="/new-plant" role="button">Meer informatie</a>
+       
     </article>
+
+
 <% }) %>
+
 
 
 <%- include('./partials/foot') %>

@@ -552,8 +552,8 @@ img.stekjes {
   width: 270px;
   height: auto;
   border-radius: 5px;
-  background-color: #b8c7b4;
-  
+  border-color: #75916e;
+  border: 6px;
 }
 
 article {
@@ -562,14 +562,15 @@ article {
   flex-wrap: wrap;
 }
 
-button.informatie-button {
-  margin-left: 35px;
+
+a.informatie-button {
   background-color: #214d12;
   height: 40px;
   width: 170px;
   border-radius: 5px;
   color: white;
   font-size: 17px;
+  font-family: "Schibsted Grotesk", sans-serif;
 }
 
 /* Desktop */

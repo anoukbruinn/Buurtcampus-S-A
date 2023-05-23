@@ -562,7 +562,6 @@ article {
   flex-wrap: wrap;
 }
 
-
 a.informatie-button {
   background-color: #214d12;
   height: 40px;
@@ -572,6 +571,8 @@ a.informatie-button {
   font-size: 17px;
   font-family: "Schibsted Grotesk", sans-serif;
 }
+
+
 
 /* Desktop */
 @media only screen and (min-width: 560px) {

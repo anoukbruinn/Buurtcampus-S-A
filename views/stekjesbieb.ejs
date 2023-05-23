@@ -10,14 +10,14 @@
 
 
 <% stekjes.forEach(stekje => { %>
- 
+ <container class="stekje"> 
           <article>
         <img class="stekjes" src="<%=stekje.fotos[0].original %>"/>
         <h2><%= stekje.naam %></h2>
         <a class="informatie-button" href="/new-plant" role="button">Meer informatie</a>
        
     </article>
-
+</container>
 
 <% }) %>
 

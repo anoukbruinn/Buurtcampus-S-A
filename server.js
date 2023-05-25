@@ -43,6 +43,12 @@ app.get("/new-plant", (request, response) => {
   response.render("new-plant", data);
 });
 
+// Maak een route voor de contact
+
+app.get("/contact", (request, response) => {
+  response.render("contact", data);
+});
+
 // Stel het poortnummer in waar express op gaat luisteren
 app.set("port", 9800);
 

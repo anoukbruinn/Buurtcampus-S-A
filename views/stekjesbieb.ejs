@@ -11,8 +11,12 @@
 
 <% stekjes.forEach(stekje => { %>
     <article>
+       <div class="stekjes-2"> 
         <img class="stekjes" src="<%=stekje.fotos[0].original %>"/>
         <h2><%= stekje.naam %></h2>
+        <a class="button" href="/new-plant"> <input type='button' value='Meer informatie'> </a>
+
+    </div> 
     </article>
 <% }) %>
 

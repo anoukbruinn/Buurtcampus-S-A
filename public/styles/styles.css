@@ -583,6 +583,60 @@ input {
   
 }
 
+/* Chatbot */
+
+.chatbox {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+
+}
+
+.chatbox h1 {
+  font-family: var(--header);
+  font-size: var(--h1);
+  font-weight: var(--bold);
+}
+
+.chatbox p {
+  font-family: var(--bodytext);
+  font-size: var(--p);
+  font-weight: var(--regular);
+  margin-bottom: 40px;
+}
+
+.chatbox > ul {
+  text-align: left;
+}
+
+.chatbox-btn > input{
+  background-color: transparent;
+}
+
+/* States */
+span.loading,
+span.empty,
+span.offline {
+  padding: 2rem;
+  font-size: 0.7rem;
+  font-family: var(--bodytext);
+  font-size: var(--p);
+  font-weight: var(--regular);
+}
+
+span.loading {
+  color: light-grey;
+}
+
+span.empty {
+  color: light-grey;
+}
+
+span.offline {
+  color: red;
+}
+
+
 /* Desktop */
 @media only screen and (min-width: 560px) {
   /* Header */

@@ -1,13 +1,11 @@
-<%- include('./partials/head.ejs') %>
+<section class="chatbox-wrapper">
 
-<section class="hero">
-    <section class="hero-card-index">
-        <h1>Stekjesbieb</h1>
-        <h2>Amsterdam</h2>
-    </section>
-</section>
-
-<section class="chatbox">
+<input type="checkbox" id="chatboxToggle" />
+<label for="chatboxToggle" class="chatboxIcon">
+  <span class="icon"><i class="fa-brands fa-envira"></i></span>
+</label>
+<div id="chatboxContainer">
+  <div class="chatbox">
     <h1>Buurtchat</h1>
     <p>Voor al je vragen of gewoon een praatje</p>
 
@@ -22,8 +20,7 @@
           <input type="text" autocomplete="off" class="chatbot-btn" />
           <button><span>Send</span></button>
         </form>
+  </div>
+</div>
 
-      </section>
-
-
-<%- include('./partials/foot.ejs') %>
+</section>

@@ -96,10 +96,6 @@ app.get("/contact", (request, response) => {
   response.render("contact", data);
 });
 
-// Maak een route voor de chatbot
-app.get("/chatbot", function (request, response) {
-  response.render("chatbot");
-});
 
 // Stel het poortnummer in waar express op gaat luisteren
 app.set("port", 9800);

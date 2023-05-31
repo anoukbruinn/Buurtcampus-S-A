@@ -40,7 +40,12 @@ app.get("/stekjesbieb", (request, response) => {
 // Maak een route voor de new-plant
 
 app.get("/new-plant", (request, response) => {
-  response.render("new-plant", data);
+  let url = `https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes?id=${request.query.id}`;
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      response.render("new-plant", data);
+    });
 });
 
 // Maak een route voor de contact

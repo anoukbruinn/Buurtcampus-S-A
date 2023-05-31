@@ -84,6 +84,9 @@ header {
   width: 100%;
   padding: 20px 10px 0px 10px;
   position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000000;
 }
 
 nav {
@@ -582,6 +585,103 @@ input {
   margin-top: 10px;
   
 }
+
+/* Chatbot */
+
+.chatbox {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  z-index: 5;
+  position: absolute;
+  background-color: var(--light-blue);
+  border-radius: 20px;
+  width: 100%;
+  height: 80vh;
+  bottom: 0;
+}
+
+.chatbox h1 {
+  font-family: var(--header);
+  font-size: var(--h1);
+  font-weight: var(--bold);
+}
+
+.chatbox p {
+  font-family: var(--bodytext);
+  font-size: var(--p);
+  font-weight: var(--regular);
+  margin-bottom: 40px;
+}
+
+.chatbox > ul {
+  text-align: left;
+}
+
+.chatbox-btn > input{
+  background-color: transparent;
+}
+
+/* Popup */
+
+.chatbox-wrapper {
+  position: sticky;
+  bottom: 0;
+  height: 60px;
+}
+
+.chatboxIcon {
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  position: sticky;
+}
+
+.chatboxIcon .icon {
+  font-size: 20px;
+}
+
+#chatboxToggle {
+  display: none;
+}
+
+#chatboxContainer {
+  display: none;
+}
+
+#chatboxToggle:checked ~ #chatboxContainer {
+  display: block;
+}
+
+
+
+
+/* States */
+span.loading,
+span.empty,
+span.offline {
+  padding: 2rem;
+  font-size: 0.7rem;
+  font-family: var(--bodytext);
+  font-size: var(--p);
+  font-weight: var(--regular);
+}
+
+span.loading {
+  color: light-grey;
+}
+
+span.empty {
+  color: light-grey;
+}
+
+span.offline {
+  color: red;
+}
+
 
 /* Desktop */
 @media only screen and (min-width: 560px) {

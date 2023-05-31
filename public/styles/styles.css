@@ -583,6 +583,42 @@ input {
   color: white;
   font-size: 17px;
   margin-top: 10px;
+}
+
+/* stekje */
+
+img.individual-stekje-img {
+  margin-top: 50px;
+  width: 290px;
+  height: auto;
+  border-radius: 5px;
+  background-color: #b8c7b4;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section.detailpage {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+h1.naam-stekje {
+  font-size: 30px;
+  font-style: bold;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+hr {
+  color: #214d12;
+  height: 5px;
+  border-radius: 5px;
   
 }
 
@@ -590,17 +626,17 @@ input {
 
 .chatbox {
   text-align: center;
-    width: 95%;
-    margin: auto;
-    z-index: 5;
-    position: absolute;
-    background-color: var(--light-blue);
-    border-radius: 20px;
-    height: 80vh;
-    bottom: 60px;
-    right: 0;
-    left: 0;
-    padding: 20px;
+  width: 95%;
+  margin: auto;
+  z-index: 5;
+  position: absolute;
+  background-color: var(--light-blue);
+  border-radius: 20px;
+  height: 80vh;
+  bottom: 60px;
+  right: 0;
+  left: 0;
+  padding: 20px;
 }
 
 .chatbox h1 {
@@ -620,7 +656,7 @@ input {
   text-align: left;
 }
 
-.chatbox-btn > input{
+.chatbox-btn > input {
   background-color: transparent;
 }
 
@@ -657,8 +693,6 @@ input {
   font-size: 25px;
 }
 
-
-
 /* States */
 span.loading,
 span.empty,
@@ -681,7 +715,6 @@ span.empty {
 span.offline {
   color: red;
 }
-
 
 /* Desktop */
 @media only screen and (min-width: 560px) {

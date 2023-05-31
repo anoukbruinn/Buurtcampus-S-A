@@ -1,19 +1,18 @@
 // Importeer express uit de node_modules map
-import * as path from 'path'
-import * as dotenv from "dotenv"
+import * as path from "path";
+import * as dotenv from "dotenv";
 
-import { Server } from 'socket.io'
-import { createServer } from 'http'
-import express from 'express'
-
+import { Server } from "socket.io";
+import { createServer } from "http";
+import express from "express";
 
 dotenv.config();
 
 const url = "https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes";
 const data = await fetch(url).then((response) => response.json());
 
-const app = express()
-const http = createServer(app)
+const app = express();
+const http = createServer(app);
 const ioServer = new Server(http, {
   connectionStateRecovery: {
     // De tijdsduur voor recovery bij disconnect
@@ -21,41 +20,41 @@ const ioServer = new Server(http, {
     // Of middlewares geskipped moeten worden bij recovery (ivm login)
     skipMiddlewares: true,
   },
-})
-const historySize = 50
+});
+const historySize = 50;
 
-let history = []
+let history = [];
 
 // Serveer client-side bestanden
-app.use(express.static(path.resolve('public')))
+app.use(express.static(path.resolve("public")));
 
 // Start de socket.io server op
-ioServer.on('connection', (client) => {
+ioServer.on("connection", (client) => {
   // Log de connectie naar console
-  console.log(`user ${client.id} connected`)
+  console.log(`user ${client.id} connected`);
 
   // Stuur de history
-  client.emit('history', history)
+  client.emit("history", history);
 
   // Luister naar een message van een gebruiker
-  client.on('message', (message) => {
+  client.on("message", (message) => {
     // Check de maximum lengte van de historie
     while (history.length > historySize) {
-      history.shift()
+      history.shift();
     }
     // Voeg het toe aan de historie
-    history.push(message)
+    history.push(message);
 
     // Verstuur het bericht naar alle clients
-    ioServer.emit('message', message)
-  })
+    ioServer.emit("message", message);
+  });
 
   // Luister naar een disconnect van een gebruiker
-  client.on('disconnect', () => {
+  client.on("disconnect", () => {
     // Log de disconnect
-    console.log(`user ${client.id} disconnected`)
-  })
-})
+    console.log(`user ${client.id} disconnected`);
+  });
+});
 
 // Stel ejs in als template engine en geef de 'views' map door
 app.set("view engine", "ejs");
@@ -87,17 +86,12 @@ app.get("/stekjesbieb", (request, response) => {
 // Maak een route voor de new-plant
 
 app.get("/new-plant", (request, response) => {
-<<<<<<< Updated upstream
   let url = `https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes?id=${request.query.id}`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
       response.render("new-plant", data);
     });
-=======
-  console.log(data);
-  response.render("new-plant", data);
->>>>>>> Stashed changes
 });
 
 // Maak een route voor de contact
@@ -105,7 +99,6 @@ app.get("/new-plant", (request, response) => {
 app.get("/contact", (request, response) => {
   response.render("contact", data);
 });
-
 
 // Stel het poortnummer in waar express op gaat luisteren
 app.set("port", 9800);
